@@ -1,2 +1,0 @@
-# Sprint0Arduino
-hola
