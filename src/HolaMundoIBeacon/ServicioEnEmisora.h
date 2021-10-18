@@ -88,11 +88,11 @@ public:
 
 	// .........................................................
 	// .........................................................
-  // [char], N, BLESecurityModel, BLESecurityModel, N --> Caracteristica
+  // [char], N, SecureMode_tl, SecureMode_tl, N --> Caracteristica
 	Caracteristica( const char * nombreCaracteristica_ ,
 					uint8_t props,
-					BleSecurityMode permisoRead,
-					BleSecurityMode permisoWrite, 
+					SecureMode_t permisoRead,
+					SecureMode_t permisoWrite, 
 					uint8_t tam ) 
 	  :
 	  Caracteristica( nombreCaracteristica_ ) // llamada al otro constructor
@@ -112,11 +112,11 @@ public:
 	} // ()
 
 	// .........................................................
-	// BleSecurityMode::SECMODE_OPEN  , BleSecurityMode::SECMODE_NO_ACCESS
+	// SecureMode_t::SECMODE_OPEN  , SecureMode_t::SECMODE_NO_ACCESS
 	// .........................................................
 
-  // BleSecurityMode, BleSecurityMode --> asignarPermisos()
-	void asignarPermisos( BleSecurityMode permisoRead, BleSecurityMode permisoWrite ) {
+  // SecureMode_t, SecureMode_t --> asignarPermisos()
+	void asignarPermisos( SecureMode_t permisoRead, SecureMode_t permisoWrite ) {
 	  // no puedo escribir AUN si el constructor llama a esto: Serial.println( "laCaracteristica.setPermission( permisoRead, permisoWrite ); " );
 	  (*this).laCaracteristica.setPermission( permisoRead, permisoWrite );
 	} // ()
@@ -135,10 +135,10 @@ public:
   public:
 	// .........................................................
 	// .........................................................
-  //N, BleSecurityModel, BleSecurityModel, N --> asignarPropiedadesPermisosYTamanyoDatos() -->
+  //N, SecureMode_tl, SecureMode_tl, N --> asignarPropiedadesPermisosYTamanyoDatos() -->
 	void asignarPropiedadesPermisosYTamanyoDatos( uint8_t props,
-												 BleSecurityMode permisoRead,
-												 BleSecurityMode permisoWrite, 
+												 SecureMode_t permisoRead,
+												 SecureMode_t permisoWrite, 
 												 uint8_t tam ) {
 	  asignarPropiedades( props );
 	  asignarPermisos( permisoRead, permisoWrite );
