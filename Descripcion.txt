@@ -1,0 +1,1 @@
+Abriremos el archivo HolaMundoIBeacon y lo compilaremos con el sensor y el microprocesador conectados, y cuando funcione, en el monitor serie podremos comprobar que lanza beacons para que nuestro móvil lo detecte en la aplicación.
