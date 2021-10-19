@@ -1,7 +1,9 @@
 // -*- mode: c++ -*-
 
 // --------------------------------------------------------------
-// Jordi Bataller i Mascarell
+// Publicador.h
+// Leire Villarroya Martínez
+// 18/10/2021
 // --------------------------------------------------------------
 
 #ifndef PUBLICADOR_H_INCLUIDO
@@ -25,7 +27,7 @@ private:
   // ............................................................
 public:
   EmisoraBLE laEmisora {
-	"sergi", //  nombre emisora
+	"belen", //  nombre emisora
 	  0x004c, // fabricanteID (Apple)
 	  4 // txPower
 	  };
