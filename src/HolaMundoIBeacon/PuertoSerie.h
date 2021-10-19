@@ -2,8 +2,9 @@
 // -*- mode: c++ -*-
 
 // ----------------------------------------------------------
-// Jordi Bataller i Mascarell
-// 2019-07-07
+// PuertoSerie.h
+// Leire Villarroya Martínez
+// 18/10/2021
 // ----------------------------------------------------------
 
 #ifndef PUERTO_SERIE_H_INCLUIDO
